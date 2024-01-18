@@ -1,0 +1,89 @@
+# printing simple statement in python 
+print("Hello World")
+
+#Data types in python: str,int,float,boolean
+number = 10
+number = number +0.01
+# str(variable) --> typecasting variable as a string
+# int(variable), float(variable)
+number = str(number) + 'a'
+print( type(number), number)
+boolean_variable = False # True
+print(boolean_variable, type(boolean_variable))
+
+# string and formatted string
+number_2 = 10
+string_x = "Hello this number is equal to: "+str(number_2)
+formated_string_x = f"Hello this number 2 is equal to: {number_2}"
+print(string_x, formated_string_x)
+_ = 5
+print(_)# underscore is the only function whch can define.
+#grade = 60
+grade =int(input("please input a grade: \n"))
+if grade>= 60:
+    print("pass")
+else:
+    print("fail")
+
+grade = 65
+if grade>= 85:
+    print("a")
+elif grade>= 75:
+    print("b")
+elif grade>= 60:
+    print("c")
+
+grade =int(input("please input a grade: \n"))
+if grade>= 60:
+    print("A")
+elif grade>= 75:
+    print("b")
+elif grade>= 80:
+    print("c")
+else:
+    print("f")
+
+# condition expression
+    # by setting a variable based on a condition
+    # pass or fail
+    #other programming languages result = grade>=60 : "pass" ? "fail" 
+    # result = value_of_true if condition else value_of_fale
+    # condition expression in python must have an else
+
+result = "pass" if grade>= 60 else "false"
+print(result)
+
+def example_match(value):
+    match value:
+        case 1:
+            print("It's one!")
+        case 2 | 3:
+            print("It's either two or three!")
+        case _:
+            print("It's something else.")
+
+example_match(1)
+example_match(2)
+example_match(5)
+
+
+def sum_x(1, 2):
+    result = 1 + 2
+    return result
+
+# Example usage
+result_sum = sum_x(2, 3)
+print(result_sum)
+
+# defining functions in python
+
+#sum_return will return the sum of two numbers 
+
+def sum_return(num1, num2):
+    sum_result = num1+num2
+    return sum_result
+# sum void will print the sum of two number in the terminal
+def sun_void(num1, num2):
+    sum_result= num1+num2
+    print(sum_result)
+
